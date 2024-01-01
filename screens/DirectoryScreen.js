@@ -4,11 +4,11 @@ import { Avatar, ListItem } from 'react-native-elements';
 const DirectoryScreen = (props) => {
   const renderDirectoryItem = ({ item: citation }) => {
     return (
-      <ListItem>
+      <ListItem onPress={() => props.onPress(citation.id)}>
         <Avatar source={citation.image} rounded />
         <ListItem.Content>
-          <ListItem.Title>{citation.name}</ListItem.Title>
-          <ListItem.Subtitle>{citation.description}</ListItem.Subtitle>
+          <ListItem.Title>{citation.title}</ListItem.Title>
+          <ListItem.Subtitle>{citation.license}</ListItem.Subtitle>
         </ListItem.Content>
       </ListItem>
     );
