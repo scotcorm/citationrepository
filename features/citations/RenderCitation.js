@@ -4,9 +4,9 @@ import { Card } from 'react-native-elements';
 const RenderCitation = ({ citation }) => {
   if (citation) {
     return (
-      <Card containerStyle={{ padding: 0 }}>
+      <Card>
         <Card.Image source={citation.image}>
-          <View style={{ justifyContent: 'center', flex: 1 }}>
+          {/* <View style={{ justifyContent: 'center', flex: 1 }}>
             <Text
               style={{
                 color: 'white',
@@ -14,11 +14,14 @@ const RenderCitation = ({ citation }) => {
                 fontSize: 20,
               }}
             >
-              {citation.name}
+              {citation.title}
             </Text>
-          </View>
+          </View> */}
         </Card.Image>
-        <Text style={{ margin: 20 }}>{citation.description}</Text>
+        <Text style={{ margin: 5, justifyContent: 'center' }}>
+          {citation.title}
+        </Text>
+        <Text style={{ margin: 5 }}>{citation.creator}</Text>
       </Card>
     );
   }

@@ -1,7 +1,8 @@
 import RenderCitation from '../features/citations/RenderCitation';
 
-const CitationInfoScreen = (props) => {
-  return <RenderCitation citation={props.citation} />;
+const CitationInfoScreen = ({ route }) => {
+  const { citation } = route.params;
+  return <RenderCitation citation={citation} />;
 };
 
 export default CitationInfoScreen;
