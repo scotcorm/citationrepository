@@ -1,10 +1,10 @@
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { Card } from 'react-native-elements';
 
 const RenderCitation = ({ citation }) => {
   if (citation) {
     return (
-      <Card>
+      <Card containerStyle={styles.cardContainer}>
         <Card.Image source={citation.image}>
           {/* <View style={{ justifyContent: 'center', flex: 1 }}>
             <Text
@@ -27,5 +27,13 @@ const RenderCitation = ({ citation }) => {
   }
   return <View />;
 };
+
+const styles = StyleSheet.create({
+  cardContainer: {
+    padding: 0,
+    margin: 0,
+    marginBottom: 20,
+  },
+});
 
 export default RenderCitation;
