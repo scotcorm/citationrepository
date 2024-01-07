@@ -4,20 +4,14 @@ import { Card } from 'react-native-elements';
 const RenderCitation = ({ citation }) => {
   if (citation) {
     return (
-      <Card containerStyle={styles.cardContainer}>
-        <Card.Image source={citation.image}>
-          {/* <View style={{ justifyContent: 'center', flex: 1 }}>
-            <Text
-              style={{
-                color: 'white',
-                textAlign: 'center',
-                fontSize: 20,
-              }}
-            >
-              {citation.title}
-            </Text>
-          </View> */}
-        </Card.Image>
+      <Card>
+        <Card.Title>{citation.title}</Card.Title>
+        <Card.Divider />
+        <Card.Image
+          source={citation.image}
+          style={{ width: '100%', height: '100%', padding: 0, margin: 0 }}
+          resizeMode='contain'
+        ></Card.Image>
         <Text style={{ margin: 5, justifyContent: 'center' }}>
           {citation.title}
         </Text>
@@ -32,7 +26,6 @@ const styles = StyleSheet.create({
   cardContainer: {
     padding: 0,
     margin: 0,
-    marginBottom: 20,
   },
 });
 
