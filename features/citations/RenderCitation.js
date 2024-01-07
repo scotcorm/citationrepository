@@ -9,13 +9,19 @@ const RenderCitation = ({ citation }) => {
         <Card.Divider />
         <Card.Image
           source={citation.image}
-          style={{ width: '100%', height: '100%', padding: 0, margin: 0 }}
+          style={{ width: '100%', padding: 0, margin: 0 }}
           resizeMode='contain'
         ></Card.Image>
         <Text style={{ margin: 5, justifyContent: 'center' }}>
-          {citation.title}
+          Title: {citation.title}
         </Text>
-        <Text style={{ margin: 5 }}>{citation.creator}</Text>
+        <Text style={{ margin: 5 }}>Source: {citation.source}</Text>
+        <Text style={{ margin: 5 }}>License: {citation.license}</Text>
+        <Text style={{ margin: 5 }}>{citation.sourceUrl}</Text>
+        <Text style={{ margin: 5 }}>{citation.licenseUrl}</Text>
+        <Text style={{ margin: 5 }}>
+          Additional Notes/Derived From: {citation.derivedFrom}
+        </Text>
       </Card>
     );
   }

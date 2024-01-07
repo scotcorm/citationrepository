@@ -2,13 +2,13 @@ export const CITATIONS = [
   {
     id: 0,
     title: 'robot maid',
-    creator: 'Vinzence Studio test',
+    creator: 'Vinzence Studio',
     source: 'Noun Project',
     sourceUrl: 'https://thenounproject.com/icon/robot-maid-2838673/',
     license: 'CC BY 3.0',
     licenseUrl: 'https://creativecommons.org/licenses/by/3.0/',
     image: require('../assets/images/noun-robot-maid-2838673.png'),
-    derivedFrom: 'N/A',
+    derivedFrom: 'Additional notes: N/A',
   },
   {
     id: 1,
