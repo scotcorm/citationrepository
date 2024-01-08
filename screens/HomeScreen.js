@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, View, Text, ScrollView } from 'react-native';
 import { Card } from 'react-native-elements';
 import { CITATIONS } from '../shared/citations';
 
@@ -17,9 +17,10 @@ const FeaturedItem = ({ item }) => {
           Copyrighted images from "All Rights Reserved" to "Some Rights
           Reserved." This site includes a curated list of images with their
           Title, Creator,Source, and License information, and we highly suggest
-          that you visit Creative Commons' great site for more information about
+          that you visit Creative Commons' great site for information about
           citation rules!{' '}
         </Text>
+        <Card.Divider />
         <Card.Title>{item.title}</Card.Title>
 
         <Card.Image
@@ -39,9 +40,12 @@ const FeaturedItem = ({ item }) => {
             resizeMode='contain'
           ></View>
         </>
-        <Text style={{ margin: 20 }}>{item.description}</Text>
+        <Text style={{ margin: 5, paddingTop: 10, justifyContent: 'center' }}>
+          Creator: {item.creator}
+        </Text>
         <Text style={{ margin: 5 }}>Source: {item.source}</Text>
         <Text style={{ margin: 5 }}>License: {item.license}</Text>
+        <Text style={{ margin: 5 }}>{item.description}</Text>
       </Card>
     );
   }
@@ -51,7 +55,8 @@ const FeaturedItem = ({ item }) => {
 const HomeScreen = () => {
   const [citations, setCitations] = useState(CITATIONS);
 
-  const featCitation = citations.find((item) => item.title);
+  //const featCitation = citations.find((item) => item.title);
+  const featCitation = citations[Math.floor(Math.random() * citations.length)];
 
   return (
     <View>
@@ -59,5 +64,12 @@ const HomeScreen = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  cardContainer: {
+    padding: 0,
+    margin: 0,
+  },
+});
 
 export default HomeScreen;

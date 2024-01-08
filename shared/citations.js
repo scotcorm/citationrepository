@@ -57,6 +57,6 @@ export const CITATIONS = [
     licenseUrl: 'http://creativecommons.org/licenses/by/3.0/',
     image: require('../assets/images/minnowsInAMaze.jpg'),
     derivedFrom:
-      'TITLE: Maze Motif \nCREATOR/SOURCE: Cooper Hewitt, Smithsonian Design Museum \nSOURCE URL: https://www.si.edu/object/maze-motif:chndm_1959-150-4?edan_q=maze&oa=1&edan_fq%5B0%5D=media_usage:\nCC0&destination=/search/collection-images&searchResults=1&id=chndm_1959-150-4 \nLICENSE: CC0 \nLICENSE URL: https://www.si.edu/Termsofuse \nADDITIONAL NOTES: Changed “Maze Motif” by desaturating it and adding filter.\n\nAND \n\nTITLE: Notropis louisianae  \nCREATOR/SOURCE: collector: Frederick M. Chamberlain, National Museum of Natural History \nSOURCE URL: https://www.si.edu/about/natural-history-museum \nLICENSE: CC0 \nLICENSE URL: https://www.si.edu/Termsofuse ',
+      'TITLE: Maze Motif \n\nCREATOR/SOURCE: Cooper Hewitt, Smithsonian Design Museum \n\nSOURCE URL: https://www.si.edu/object/maze-motif:chndm_1959-150-4?edan_q=maze&oa=1&edan_fq%5B0%5D=media_usage:\nCC0&destination=/search/collection-images&searchResults=1&id=chndm_1959-150-4 \nLICENSE: CC0 \n\nLICENSE URL: https://www.si.edu/Termsofuse \nADDITIONAL NOTES: Changed “Maze Motif” by desaturating it and adding filter.\n\nAND \n\nTITLE: Notropis louisianae  \nCREATOR/SOURCE: collector: Frederick M. Chamberlain, National Museum of Natural History \nSOURCE URL: https://www.si.edu/about/natural-history-museum \nLICENSE: CC0 \nLICENSE URL: https://www.si.edu/Termsofuse ',
   },
 ];

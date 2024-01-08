@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, ScrollView } from 'react-native';
 import { Avatar, ListItem } from 'react-native-elements';
 import { CITATIONS } from '../shared/citations';
 
@@ -8,15 +8,17 @@ const DirectoryScreen = ({ navigation }) => {
 
   const renderDirectoryItem = ({ item: citation }) => {
     return (
-      <ListItem
-        onPress={() => navigation.navigate('CitationInfo', { citation })}
-      >
-        <Avatar source={citation.image} rounded />
-        <ListItem.Content>
-          <ListItem.Title>{citation.title}</ListItem.Title>
-          <ListItem.Subtitle>{citation.source}</ListItem.Subtitle>
-        </ListItem.Content>
-      </ListItem>
+      <ScrollView>
+        <ListItem
+          onPress={() => navigation.navigate('CitationInfo', { citation })}
+        >
+          <Avatar source={citation.image} rounded />
+          <ListItem.Content>
+            <ListItem.Title>{citation.title}</ListItem.Title>
+            <ListItem.Subtitle>{citation.source}</ListItem.Subtitle>
+          </ListItem.Content>
+        </ListItem>
+      </ScrollView>
     );
   };
   return (
