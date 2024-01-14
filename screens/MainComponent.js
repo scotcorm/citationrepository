@@ -14,7 +14,7 @@ import AboutScreen from './AboutScreen';
 import ContactScreen from './ContactScreen';
 
 import { Icon } from 'react-native-elements';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo.jpg';
 
 const Drawer = createDrawerNavigator();
 
