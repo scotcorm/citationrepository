@@ -1,12 +1,10 @@
 import { useState } from 'react';
-import { StyleSheet, View, Text, ScrollView } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { Card } from 'react-native-elements';
 import { CITATIONS } from '../shared/citations';
 
 const FeaturedItem = ({ item }) => {
   if (item) {
-    // const randomCitation =
-    //   CITATIONS[Math.floor(Math.random() * CITATIONS.length)];
     return (
       <Card>
         <Text style={{ fontSize: 22, textAlign: 'center' }}>

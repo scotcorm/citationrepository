@@ -1,8 +1,7 @@
-import { ScrollView, Text } from 'react-native';
+import { ScrollView, Text, Linking } from 'react-native';
 import { Card, ListItem, Avatar } from 'react-native-elements';
 import { PARTNERS } from '../shared/partners';
 import { useState } from 'react';
-import { Linking } from 'react-native';
 
 const Mission = () => {
   return (
