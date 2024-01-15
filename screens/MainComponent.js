@@ -127,7 +127,7 @@ const CustomDrawerContent = (props) => (
         <Image source={logo} style={styles.drawerImage} />
       </View>
       <View style={{ flex: 2 }}>
-        <Text style={styles.drawerHeaderText}>NuCamp</Text>
+        <Text style={styles.drawerHeaderText}>Citation {'\n'}Repository</Text>
       </View>
     </View>
     <DrawerItemList {...props} labelStyle={{ fontWeight: 'bold' }} />
@@ -144,6 +144,7 @@ const Main = () => {
     >
       <Drawer.Navigator
         initialRouteName='Home'
+        drawerContent={CustomDrawerContent}
         drawerStyle={{ backgroundColor: '#CEC8FF' }}
       >
         <Drawer.Screen

@@ -27,10 +27,8 @@ const ContactScreen = () => {
           }
         >
           Click Here to visit netlify.
-          {'\n'}
-          {'\n'}
         </Text>
-        <Text style={{ marginBottom: 10 }}>U.S.A.</Text>
+        <Text style={{ marginBottom: 10, marginTop: 10 }}>or </Text>
 
         <Text
           style={{ color: 'blue' }}
